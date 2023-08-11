@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "esnext",
+        "strict": true,
+        "baseUrl": "./src",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "noEmit": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "include": [
+        "index.d.ts",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
