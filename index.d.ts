@@ -1,3 +1,5 @@
+export {}
+
 declare namespace proxyman.addons {
     type Method = 'ANY' | 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH' | 'HEAD' | 'OPTIONS' | 'PATCH'
 
@@ -53,4 +55,8 @@ declare namespace proxyman.addons {
     type onRequest = (context: Context, url: string, request: Request) => Request
 
     type onResponse = (context: Context, url: string, request: Request, response: Response) => Response
+}
+
+declare global {
+    const sharedState: Record<string, any>
 }
